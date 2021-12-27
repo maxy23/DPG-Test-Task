@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>test</title>
+    <style>
+body {
+    background: url(./assets/image/background_cosmos.svg) ;
+}
+.form {
+width: 265px;
+background-color: #171929;
+color: #FFFFFF;
+margin: auto;
+padding: 45px;
+border-radius: 27px;
+}
+.main_title {
+    color: #FFFFFF;
+    font-size: 55px;
+    line-height: 66px;
+    font-family: 'Roboto', 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    margin-bottom: 25px;
+    font-style: normal;
+    font-weight: 500;
+
+
+}
+.label {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #797EA3;
+    display: block;
+}
+.label:focus {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+    display: block;
+}
+.form_title {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    margin-bottom: 11px;
+    margin-top: 0;
+}
+.inscription_required {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #797EA3;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+.form_contain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.button_submit {
+    margin: auto;
+}
+.form_input {
+    margin-bottom: 38px;
+}
+.checkbox {
+    background-color: #2C2F47;
+    border-radius: 8px;
+    color: #FFFFFF;
+    width: 31px;
+    height: 31px;
+    vertical-align: middle;
+}
+.input {
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    border-top:none;
+    border-left: none;
+    border-right: none;
+    background: none;
+    border-bottom: 1px solid #797EA3;
+    display: block;
+}
+.input:focus {
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    border-top:none;
+    border-left: none;
+    border-right: none;
+    background: none;
+    border-color: #797EA3;
+    border: none;
+    color: #FFFFFF;
+}
+.accept {
+    margin-bottom: 30px;
+    font-family: 'Roboto',sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 18px;
+    letter-spacing: 0em;
+}
+.button {
+    background-color: #2C2F47;
+    padding-top: 11px;
+    padding-left: 40px;
+    padding-bottom: 11px;
+    padding-right: 40px;
+    border: none;
+    border-radius: 28px;
+    color: #a0a0a0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+}
+.link_privacy {
+  color: #797EA3;  
+}
+    </style>
+  </head>
+  <body>
+    <h1 class="main_title">Hello</h1>
+    <form class="form">
+      <div class="form_contain">
+        <h2 class="form_title">
+          For business enquiries please<br> use the form below
+        </h2>
+        <h3 class="inscription_required">*Required</h3>
+        <div class="form_input"><label class="label" for="form_name">Name*</label>
+        <input required class="input" id="form_name" type="text" /></div>
+        <div class="form_input"><label class="label" for="form_company">Company*</label>
+        <input
+        required
+        class="input"
+          id="form_company"
+          type="text"
+        /></div>
+        <div class="form_input"><label class="label" for="form_mail">E-mail*</label>
+        <input class="input" required id="form_mail" type="text" /></div>
+        <div class="form_input"><label class="label" for="form_phone">Phone</label>
+        <input
+        class="input"
+          id="form_phone"
+          type="number"
+        /></div>
+        <div class="form_input"><label class="label" for="form_subject">Subject</label>
+        <input class="input" id="form_subject" type="text" /></div>
+        <div class="form_input"><label class="label" for="form_massage">Message*</label>
+        <input class="input" required id="form_message" type="text" /></div>
+        <div class="accept"><input required class="checkbox" type="checkbox"><span>I accept <a class="link_privacy" href="">Terms and Privacy Policy</a></span></div>
+        <div class="button_submit"><button class="button" type="submit">Send</button></div>
+      </div>
+    </form>
+  </body>
+</html>
